@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
+.home{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    
+}
+
+.home-text{
+    text-align: left;
+    font-family: "League Spartan", sans-serif;
+    margin-left: 15%;
+    max-width: 800px;
+}
+
+.home-text h1{
+    font-family: "Noto Serif Display", serif;
+    font-weight: 800;
+    font-size: 60px;
+    color: #590616;
+}
+
+.home-text h2{
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.home-text h3{
+    font-size: 35px;
+    color: #590616;
+}
+
+.home-btn{
+    background-color: black;
+    color: #fff;
+    padding: 10px 40px;
+}
+
+.home-text ul li{
+    text-align: center;
+    display: flex;
+    list-style: none;
+    margin: 25px 20px;
+}
+
+.home-text ul {
+    display: flex; /* Usa flexbox para alinear verticalmente los elementos */
+    flex-direction: column; /* Alinea los elementos en una columna */
+    justify-content: center; /* Centra verticalmente los elementos */
+    align-items: center; /* Centra horizontalmente los elementos */
+}
+
+.home-logo img{
+    border-radius: 50%;
+    height: 500px;
+    border: solid;
+    border-color: #590616;
+    border-width: 20px;
+}

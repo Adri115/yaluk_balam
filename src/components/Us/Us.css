@@ -1,0 +1,30 @@
+.us-container ul {
+  padding: 0;
+  margin: 0;
+
+
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Espacio entre las imágenes */
+}
+
+.us-container li {
+  width: calc(33.33% - 8px); /* Tamaño del contenedor de cada imagen */
+  margin-bottom: 20px; /* Margen inferior entre las imágenes */
+  text-align: center;
+}
+
+/* Estilo para las imágenes */
+.us-container li img {
+  position: relative;
+  width: 80%; /* Ajustar el tamaño de la imagen al ancho del contenedor */
+  height: 350px; /* Mantener la proporción de la imagen */
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+}
+
+.us-container li p{
+ position:relative;
+ text-align: center;
+}

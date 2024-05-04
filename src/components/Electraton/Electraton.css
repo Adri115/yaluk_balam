@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+.electraton-container{
+    background-color: #590616;
+    display: flex;
+    max-height: 700px;
+}
+
+.electraton-container img{
+    max-height: 100%;
+    width: 35%;
+    border-top-right-radius: 40%;
+}
+
+.electraton-container ul{
+    margin-top: 10%;
+}
+.electraton-container ul li{
+    display: flex;
+    list-style: none;
+    margin: 25px 20px;
+}
+
+.electraton-text{
+    text-align: left;
+    padding: 10px 50px;
+}
+.electraton-text h1{
+    color: #fff;
+    text-align: justify;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.electraton-text p{
+    color: #fff;
+    font-family: "Crimson Pro", serif;
+    text-align: justify;
+    font-size: 30px;
+}
+
+.electraton-btn{
+    background-color: transparent;
+    color: #fff;
+    padding: 15px 20px;
+    border-color: #fff;
+    border-width: thin;
+
+}
