@@ -5,7 +5,8 @@
     width: 100%;
     display: flex;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 80px;
+    position: relative;
     
 }
 
@@ -53,10 +54,44 @@
     align-items: center; /* Centra horizontalmente los elementos */
 }
 
+.home-logo{
+    text-align: right;
+    height: 20%;
+}
+
 .home-logo img{
     border-radius: 50%;
-    height: 500px;
+    height:fit-content;
     border: solid;
     border-color: #590616;
     border-width: 20px;
+    width: 90%;
+}
+
+@media (max-width: 1200px){
+
+    .home{
+        display: flex;
+    }
+    .home-text{
+        margin-left: 5%;
+        max-width: 50%;
+    }
+
+    .home-logo img{
+        width: 80%;
+    }
+}
+
+@media (max-width: 870px) {
+    .home {
+        flex-direction: column; /* Cambia la dirección del flujo de flexbox a columna */
+        align-items: center; /* Centra horizontalmente los elementos en la columna */
+    }
+
+    .home-logo {
+        margin-top: 20px; /* Agrega un espacio entre el texto y el logo */
+        text-align: center;
+    }
+
 }

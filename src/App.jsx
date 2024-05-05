@@ -17,8 +17,6 @@ const App = () => {
       <Navbar />
       <Home />
       <Electraton />
-      <Crossline />
-      <Us/>
     </div>
   )
 }

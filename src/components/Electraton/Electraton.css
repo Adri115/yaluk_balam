@@ -23,7 +23,7 @@
 
 .electraton-text{
     text-align: left;
-    padding: 10px 50px;
+    padding: 10px 20px;
 }
 .electraton-text h1{
     color: #fff;
@@ -46,4 +46,28 @@
     border-color: #fff;
     border-width: thin;
 
+}
+
+@media (max-width:870px){
+
+    .electraton-container ul li{
+        margin: 20px 15px;
+    }
+    .electraton-text{
+        padding: 10px 10px;
+
+    }
+
+    .electraton-text h1{
+        font-size: 150%;
+    }
+
+    .electraton-text p{
+        font-size: 150%;
+    }
+
+    .electraton-btn{
+        padding: 10px 10px;
+        font-size: 100%;
+    }
 }

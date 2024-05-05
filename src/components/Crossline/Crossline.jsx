@@ -4,7 +4,8 @@ import './Crossline.css'
 
 const Crossline = () => {
   return (
-    <div className='crossline-container'> <img src={logo} alt=''  className='logo'/>
+    <div className='crossline-container'>
+       <img src={logo} alt=''  className='logo'/>
     <div className="linea"></div> {/* Línea divisoria */}
     </div>
   )

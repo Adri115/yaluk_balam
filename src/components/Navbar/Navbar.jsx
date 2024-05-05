@@ -1,19 +1,27 @@
 import React,{useEffect, useState} from 'react'
 import  './Navbar.css'
 import { Link } from 'react-scroll'
-
+import menu_icon from '../../assets/menu-icon.png'
 
 const Navbar = () => {
   
-  const [sticky, setSticky] = useState(false)
+  const [sticky, setSticky] = useState(false);
+  const [hide, setHide] = useState(true);
   const [scrollPosition, setScrollPosition] = useState(0);
 
+  // Set sticky navbar
   useEffect(()=>{
     window.addEventListener('scroll',()=>{
       window.scrollY > 50 ? setSticky(true) : setSticky(false);
     })
   })
 
+  //Hide Navbar
+const handleHide = () =>{
+setHide(!hide)
+}
+  
+  //Hide Navbar
   useEffect(() => {
     
     const handleScroll = () => {
@@ -39,12 +47,18 @@ const Navbar = () => {
     alignItems: 'center',
     justifyContent: 'center',
     zIndex: 10,
-    transition: 'top 0.3s ease', // Añade una transición suave para suavizar el cambio
+    transition: '0.5s', // Añade una transición suave para suavizar el cambio
+  };
+
+  const menuStyle = {
+    top: scrollPosition > 70 ? '20px' : '-15px',
+    transition: '0.3s'
   };
 
   return (
-    <nav className={`cotainer ${sticky? 'dark-nav' : '' }`} style={navbarStyle}>
-        <ul>
+    <nav className={`nav-container ${sticky? 'dark-nav' : '' }`} style={navbarStyle}>
+         <img src={menu_icon} className='menu-icon' onClick={handleHide} style={menuStyle}/>
+        <ul className={`${hide? 'hide-mobile-menu' : ''}`}>
             <li><Link to='electraton-container' smooth={true} offset={0} duration={500}>
             <button className='btn'>ELECTRATON</button></Link> 
               </li>
