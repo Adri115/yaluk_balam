@@ -3,18 +3,19 @@
 .electraton-container{
     background-color: #590616;
     display: flex;
-    max-height: 700px;
+    max-height: 1200px;
 }
 
 .electraton-container img{
     max-height: 100%;
-    width: 35%;
+    max-width: 35%;
     border-top-right-radius: 40%;
 }
 
 .electraton-container ul{
-    margin-top: 10%;
+    margin-top: 5%;
 }
+
 .electraton-container ul li{
     display: flex;
     list-style: none;
@@ -23,8 +24,10 @@
 
 .electraton-text{
     text-align: left;
-    padding: 10px 20px;
+    padding: 10px 30px;
+    margin-left: 20px;
 }
+
 .electraton-text h1{
     color: #fff;
     text-align: justify;
@@ -50,8 +53,12 @@
 
 @media (max-width:870px){
 
+    .electraton-container{
+        height: 500px;
+    }
+
     .electraton-container ul li{
-        margin: 20px 15px;
+        margin: 10px 5px;
     }
     .electraton-text{
         padding: 10px 10px;
@@ -63,11 +70,25 @@
     }
 
     .electraton-text p{
-        font-size: 150%;
+        font-size: 120%;
+        max-width: 90%;
     }
 
     .electraton-btn{
         padding: 10px 10px;
         font-size: 100%;
+    }
+}
+
+@media (max-width:400px){
+
+    .electraton-text p{
+        font-size: 110%;
+        max-width: 95%;
+    }
+
+    .electraton-btn{
+        font-size: 90%;
+        padding: 5px 5px;
     }
 }

@@ -1,0 +1,40 @@
+.model-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.model-text{
+    width: 40%;
+}
+
+.model-3d{
+    width: 60%;
+    height: 500px;
+    border-color: gray;
+    border-width: 2px;
+    border-style: solid;
+    margin-right: 20px;
+}
+
+.model-3d:hover{
+    cursor: pointer;
+}
+
+@media (max-width:870px) {
+    .model-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .model-text{
+        width: 100%;
+    }
+
+    .model-3d{
+        width: 80%;
+        height: 500px;
+    }
+}

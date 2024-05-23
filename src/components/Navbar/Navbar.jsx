@@ -36,19 +36,6 @@ setHide(!hide)
     };
   }, []);
 
-  const navbarStyle = {
-    position: 'fixed',
-    width: '100%',
-    height: '80px',
-    color: '#fff',
-    top: scrollPosition > 70 ? '0px' : '70px', // Ajusta el margen superior dinámicamente
-    left: 0,
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    zIndex: 10,
-    transition: '0.5s', // Añade una transición suave para suavizar el cambio
-  };
 
   const menuStyle = {
     top: scrollPosition > 70 ? '20px' : '-15px',
@@ -56,17 +43,17 @@ setHide(!hide)
   };
 
   return (
-    <nav className={`nav-container ${sticky? 'dark-nav' : '' }`} style={navbarStyle}>
+    <nav className={`nav-container ${sticky? 'dark-nav' : ''}${scrollPosition > 70 ? ' nav-moved' : ''}`}>
          <img src={menu_icon} className='menu-icon' onClick={handleHide} style={menuStyle}/>
         <ul className={`${hide? 'hide-mobile-menu' : ''}`}>
             <li><Link to='electraton-container' smooth={true} offset={0} duration={500}>
             <button className='btn'>ELECTRATON</button></Link> 
               </li>
-            <li><Link to='us-container' smooth={true} offset={-235} duration={500}><button className='btn'>NOSOTROS</button></Link></li>
+            <li><Link to='us-container' smooth={true} offset={-90} duration={500}><button className='btn'>NOSOTROS</button></Link></li>
             <li><button className='btn'>PATROCINADORES</button></li>
             <li><button className='btn'>TIENDA</button></li>
             <li><button className='btn'>PATROCINANOS</button></li>
-            <li><button className='btn'>CONTACTO</button></li>
+            <li><Link to='contact-container' smooth={true} offset={-150} duration={500}><button className='btn'>CONTACTO</button></Link></li>
         </ul>
     </nav>
   )

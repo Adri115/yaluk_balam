@@ -1,12 +1,14 @@
 import React from 'react'
 import './Home.css'
 import homeLogo from '../../assets/home-logo.jpg'
+import electraton from '../../assets/Electraton.png'
+
 const Home = () => {
   return (
     <div className='home'>
         <div className='home-text'> 
         <ul>
-            <li>LOGO</li>
+            <li><img src={electraton} /></li>
             <li><h2>MÉXICO</h2></li>
             <li><h3>2024</h3></li>
             <li><button className='home-btn'>¡CONÓCENOS!</button></li>

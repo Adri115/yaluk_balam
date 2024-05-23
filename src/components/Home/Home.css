@@ -54,18 +54,23 @@
     align-items: center; /* Centra horizontalmente los elementos */
 }
 
+.home-text ul img{
+    width: 100%;
+    background: transparent;
+}
 .home-logo{
     text-align: right;
-    height: 20%;
+    height: 40%;
 }
 
 .home-logo img{
     border-radius: 50%;
-    height:fit-content;
     border: solid;
     border-color: #590616;
     border-width: 20px;
     width: 90%;
+    height: 100%;
+    margin: 5%;
 }
 
 @media (max-width: 1200px){

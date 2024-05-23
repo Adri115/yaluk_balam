@@ -1,6 +1,6 @@
 import React from 'react'
 import './Electraton.css'
-import electraton from '../../assets/electraton_cars.jpg'
+import electraton from '../../assets/electraton-race.png'
 
 const Electraton = () => {
   return (
