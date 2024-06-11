@@ -19,8 +19,7 @@
   padding-right: 5%;
 }
 
-
-.us-container li img{
+.us-container li img {
   width: 100%;
   border-top-left-radius: 30%;
   border-top-right-radius: 30%;
@@ -30,54 +29,122 @@
   transition: 0.5s ease;
 }
 
-
-.middle{
+.middle {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.text{
-  background-color: #590616;
+.reference {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 85%;
+  left: 6vw;
   color: white;
-  padding: 16px 32px;
+  font-size: 1vw;
 }
 
-.person-container:hover .middle{
+.text {
+  background-color: #590616;
+  color: white;
+  padding: 16px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text a {
+  display: flex;
+}
+
+.linkedin-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  height: 100%;
+}
+
+.text img {
+  max-height: 25px;
+  margin-right: 5px;
+}
+
+.text h4 {
+  padding-top: 2px;
+  margin: 0;
+  font-size: 1.4vw;
+}
+
+.person-container:hover .middle {
   opacity: 1;
   cursor: pointer;
 }
 
-.person-container:hover img{
+.person-container:hover .reference {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.person-container:hover .image {
   filter: blur(3px);
 }
 
-@media (max-width:1100px){
+@media (max-width: 1100px) {
   .us-container li {
-    width: calc(50% - 8px); /* Tamaño del contenedor de cada imagen */
-    margin-bottom: 20px; /* Margen inferior entre las imágenes */
+    width: calc(50% - 8px);
+    margin-bottom: 20px;
     text-align: center;
     margin-bottom: 0;
     justify-content: center;
   }
 
-  .us-container li img{
+  .us-container li img {
     height: 80%;
+  }
+
+  .reference{
+    font-size: 1.5vw;
+  }
+
+  .text h4 {
+    padding-top: 8%;
   }
 }
 
-@media (max-width: 870px){
-  
-.person-container:hover .middle{
-  pointer-events: none;
+@media (max-width: 870px) {
+  .person-container:hover .middle {
+    pointer-events: none;
+  }
+
+  .person-container:hover img {
+    pointer-events: none;
+  }
 }
 
-.person-container:hover img{
-  pointer-events: none;
-}
+@media (max-width: 450px) {
+
+  .text{
+    padding: 8px 18px;
+  }
+
+  .text img {
+    max-height: 15px;
+    margin-right: 3px;
+  }
+
+  .reference{
+    font-size: 1.5vw;
+    top: 75%;
+  }
+
+  .text h4 {
+    padding-top: 10%;
+    font-size: 1.8vw;
+  }
 }

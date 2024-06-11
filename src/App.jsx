@@ -11,6 +11,7 @@ import Us from './components/Us/Us'
 import Contact from './components/Contact/Contact'
 import Partners from './components/Partners/Partners'
 import Model from './components/Model/Model'
+import Promote from './components/Promote/Promote'
 
 
 
@@ -28,6 +29,7 @@ const App = () => {
       <Crossline />
       <Partners />
       <Crossline />
+      <Promote />
       <Contact />
     </div>
   )

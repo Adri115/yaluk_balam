@@ -74,3 +74,21 @@
         display: none;
     }
 }
+
+@media (max-width: 430px){
+    .contact-container {
+      
+        flex-direction: column;
+        align-items: center; /* Opcional: Centra los elementos horizontalmente */
+    }
+
+    .contact-col {
+        flex-basis: 100%;
+        margin-bottom: 20px; /* Opcional: Agrega margen inferior entre secciones */
+        width: 100%;
+    }
+
+    .contact-col:last-child {
+        margin-bottom: 0; /* Opcional: Elimina margen inferior del último elemento */
+    }
+}

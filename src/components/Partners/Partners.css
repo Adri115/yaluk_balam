@@ -1,38 +1,103 @@
-.partners-container{
-    border: 1px solid black;
-    margin: 1rem;
-    padding: 2rem 2rem;
-    text-align: center;
-}
-
-.partner-col1{
+/* Propiedades existentes */
+.partners-containers {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  .partner-col1 {
     width: 30%;
     display: inline-block;
-    border: 1px solid red;
     padding: 1rem 1rem;
     vertical-align: middle;
-}
-
-.partner-col2{
+    box-sizing: border-box;
+  }
+  
+  .partner-col1 h1 {
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: 900;
+    padding: 1%;
+  }
+  
+  .partner-col2 {
     width: 70%;
     display: inline-block;
-    border: 1px solid red;
     padding: 1rem 1rem;
     vertical-align: middle;
-}
-
-.partner-col2 ul{
+    box-sizing: border-box;
+  }
+  
+  .partner-col2 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-}
-
-.partner-col2 ul li{
-    align-content: center;
-}
-
-.partner-col2 ul li img{
+    flex-wrap: wrap;
+  }
+  
+  .partner-col2 ul li {
+    box-sizing: border-box;
+  }
+  
+  .partner-col2 ul li:first-child,
+  .partner-col2 ul li:nth-child(2) {
+    width: 50%; /* Ocupan el 50% del ancho disponible */
+    padding: 0.5rem;
+  }
+  
+  .partner-col2 ul li:nth-child(3),
+  .partner-col2 ul li:nth-child(4),
+  .partner-col2 ul li:nth-child(5) {
+    width: calc(33.33% - 1rem); /* Ocupan un tercio del ancho disponible con margen */
+    margin: 0.5rem;
+  }
+  
+  .partner-col2 ul li img {
     max-width: 100%;
-    max-height: 90%;
-    width: 70%;
-}
-
+    max-height: 80%;
+  }
+  
+  /* Media query para dispositivos móviles */
+  @media (max-width: 870px) {
+    .partner-col1 h1 {
+      font-size: 1.2em;
+      text-align: center;
+      font-weight: 900;
+      padding: 1%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .partners-container {
+      flex-direction: column;
+    }
+  
+    .partner-col1, .partner-col2 {
+      width: 100%;
+    }
+  
+    .partner-col2 ul li {
+      width: 100%;
+      margin: 0.5rem 0;
+    }
+  }
+  
+  @keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-3deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+   /* Aplica la animación en hover */
+   .shake:hover {
+    animation: shake 0.6s infinite; /* Ajusta la duración y la repetición de la animación */
+    cursor: pointer;
+  }
+  
+  .shake img {
+    display: block;
+    max-width: 100%;
+    transition: transform 0.1s; /* Transición suave para la rotación */
+  }

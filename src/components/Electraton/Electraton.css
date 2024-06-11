@@ -8,7 +8,7 @@
 
 .electraton-container img{
     max-height: 100%;
-    max-width: 35%;
+    width: 35%;
     border-top-right-radius: 40%;
 }
 
@@ -70,13 +70,19 @@
     }
 
     .electraton-text p{
-        font-size: 120%;
+        font-size: 3vw;
         max-width: 90%;
     }
 
     .electraton-btn{
         padding: 10px 10px;
-        font-size: 100%;
+        font-size: 2vw;
+    }
+}
+
+@media (max-width:500px){
+    .electraton-text p{
+        font-size: 4vw;
     }
 }
 
@@ -89,6 +95,19 @@
 
     .electraton-btn{
         font-size: 90%;
+        padding: 5px 5px;
+    }
+}
+
+@media (max-width:360px){
+
+    .electraton-text p{
+        font-size: 100%;
+        max-width: 95%;
+    }
+
+    .electraton-btn{
+        font-size: 80%;
         padding: 5px 5px;
     }
 }
